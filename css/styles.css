@@ -136,6 +136,9 @@ body {
 .hero-btn:hover, 
 .hero-btn:focus {
     cursor: pointer;
+    outline: none;
+    color: var(--accent-color);
+    background-color: var(--white-textcolor);
 }
 
 .hero-btn:active {
@@ -332,6 +335,9 @@ body {
 .filter-btn:hover,
 .filter-btn:focus {
     cursor: pointer;
+    outline: none;
+    background-color: var(--accent-color);
+    color: var(--white-textcolor);
 }
 
 .filter-btn:active {
