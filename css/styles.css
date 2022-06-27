@@ -1,0 +1,390 @@
+:root {
+    --bg-maincolor: #2F303A;
+    --bg-secondarycolor:#F5F4FA;
+    --accent-color: #2196F3;
+    --primary-textcolor: #212121;
+    --secondary-textcolor: #757575;
+    --white-textcolor: #ffffff;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #212121;
+
+}
+
+/* common classes */
+
+.list {
+    display: flex;
+}
+
+.container {
+    max-width: 1170px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.direction {
+    flex-direction: column;
+}
+
+.active {
+    color: var(--accent-color);
+}
+
+/* header */
+
+.header {
+    background-color: var(--white-textcolor);
+    width: 100%;
+    height: 80px;
+}
+
+.header-logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    text-decoration: none;
+    color: inherit;
+    margin-right: 93px;
+}
+
+.header-logo:focus {
+    outline: none;
+}
+
+.header-logo-web {
+    color: var(--accent-color);
+}
+
+.navlist-items {
+    margin-right: 50px;
+}
+
+.navlist-items:last-child {
+    margin-right: 330px;
+}
+
+.navlist-link {
+    color: inherit;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navlist-link:hover,  
+.navlist-link:focus {
+    color: var(--accent-color);
+    outline: none;
+}
+
+.contacts-items {
+    margin-right: 50px;
+}
+
+.contacts-items:last-child {
+    margin-right: 0px;
+}
+
+.contacts-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.contacts-link:hover,
+.contacts-link:focus {
+    color: var(--accent-color);
+    outline: none;
+}
+
+/* hero */
+
+.hero {
+    width: 100%;
+    height: 600px;
+    background-color: var(--bg-maincolor);
+}
+
+.hero-title {
+    font-size: 44px;
+    color: var(--white-textcolor);
+    max-width: 700px;
+    line-height: 1.4;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.hero-btn {
+    color: var(--white-textcolor);
+    background-color: var(--accent-color);
+    border: var(--accent-color);
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.8;
+    letter-spacing: 2px;
+    margin-top: 30px;
+    padding: 10px 32px;
+}
+
+.hero-btn:hover, 
+.hero-btn:focus {
+    cursor: pointer;
+}
+
+.hero-btn:active {
+    color: var(--accent-color);
+    background-color: var(--white-textcolor);
+}
+
+/* about us */
+
+.about {
+    width: 100%;
+    height: 290px;
+    background-color: var(--white-textcolor);
+}
+
+.about-title {
+    display: none;
+}
+
+.about-list-items {
+    max-width: 280px;
+    margin-right: 30px;
+}
+
+.about-list-items:last-child {
+    margin-right: 0px;
+}
+
+.about-subtitle {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.about-text {
+    font-weight: 400;
+    color: var(--secondary-textcolor);
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+
+/* whatweare */
+
+.whatweare {
+    width: 100%;
+    height: 480px;
+}
+
+.whatweare-title {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.whatweare-list > li {
+    margin-top: 50px;
+}
+
+.whatweare-items {
+    margin-right: 30px;
+}
+
+.whatweare-items:last-child {
+    margin-right: 0px;
+}
+
+/* ourteam */
+
+.ourteam {
+    width: 100%;
+    height: 650px;
+    background-color: var(--bg-secondarycolor);
+}
+
+.ourteam-title {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.ourteam-list > li {
+    margin-top: 50px;
+}
+
+.ourteam-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 30px;
+    height: 370px;
+    background-color: var(--white-textcolor);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.ourteam-items:last-child {
+    margin-right: 0px;
+}
+
+.ourteam-subtitle {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 25px;
+}
+
+.ourteam-text {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 7px;
+    color: var(--secondary-textcolor);
+}
+
+/* footer */
+
+.footer {
+    width: 100%;
+    height: 255px;
+    background-color: var(--bg-maincolor);
+}
+
+.alignleft {
+    align-items: flex-start;
+}
+
+.footer-logo {
+    color: var(--white-textcolor);
+}
+
+.footer-list > li {
+    margin-top: 10px;
+}
+
+.footer-list>li:first-child {
+    margin-top: 20px;
+}
+
+.footer-link {
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: var(--white-textcolor);
+    font-style: normal;
+}
+
+.footer-contacts {
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+}
+
+.footer-link:hover, 
+.footer-link:focus {
+    color: var(--accent-color);
+    outline: none;
+}
+
+.footer-contacts:hover,
+.footer-contacts:focus {
+    color: var(--accent-color);
+    outline: none;
+}
+
+/* ---- portfolio ---- */
+
+.filter {
+    width: 100%;
+    height: 180px;
+}
+
+.filter-title {
+    display: none;
+}
+
+.filter-items {
+    margin-right: 8px;
+}
+
+.filter-items:last-child {
+    margin-right: 0px;
+}
+
+.filter-btn {
+    color: var(--primary-textcolor);
+    background-color: var(--bg-secondarycolor);
+    border: var(--bg-secondarycolor);
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    padding: 6px 22px;
+}
+
+
+.filter-btn:hover,
+.filter-btn:focus {
+    cursor: pointer;
+}
+
+.filter-btn:active {
+    background-color: var(--accent-color);
+    color: var(--white-textcolor);
+}
+
+.projects {
+    margin-bottom: 95px;
+}
+
+.projects-list {
+    flex-wrap: wrap;
+    max-width: 100%;
+    justify-content: center;
+}
+
+.projects-items {
+    max-width: 370px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    border: 1px solid #EEEEEE;
+}
+
+.projects-items:nth-child(3n+3) {
+    margin-right: 0px;
+}
+
+.projects-items:nth-last-child(-n+3) {
+    margin-bottom: 0px;
+}
+
+.projects-title {
+    display: none;
+}
+
+.projects-subtitle {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 2;
+    color: var(--primary-textcolor);
+    margin-top: 20px;
+}
+
+.projects-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8;
+    color: var(--secondary-textcolor);
+    margin-top: 4px;
+}
+
+.projects-indent {
+    margin-left: 24px;
+    margin-bottom: 20px;
+}
